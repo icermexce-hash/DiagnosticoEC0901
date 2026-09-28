@@ -1,2 +1,2 @@
-# DiagnosticoEC0901MS
+# DiagnosticoEC0901
 X
