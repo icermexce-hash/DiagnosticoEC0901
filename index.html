@@ -7,8 +7,8 @@
 
 <style>
 :root{
-  --primary:#1769aa;
-  --primary-dark:#0f4f82;
+  --primary:#3A231C;
+  --primary-dark:#3A231C;
   --success:#18864b;
   --danger:#c62828;
   --warning:#b7791f;
@@ -57,7 +57,7 @@ body{
 .progress{
   height:100%;
   width:0%;
-  background:#62d99a;
+  background:#3A231C;
   transition:.3s;
 }
 
@@ -98,7 +98,7 @@ body{
 
 .option:hover{
   border-color:var(--primary);
-  background:#f5faff;
+  background:#f5f0ed;
 }
 
 .option input{
@@ -179,7 +179,7 @@ button:hover{transform:translateY(-1px)}
 
 .feedback{
   border-left:5px solid var(--primary);
-  background:#f8fbff;
+  background:#faf6f3;
   padding:17px;
   margin:14px 0;
   border-radius:8px;
@@ -334,10 +334,10 @@ const questions = [
   {
     q:"¿Cuál es el propósito principal del EC0901?",
     options:[
-      "Enseñar fisioterapia deportiva",
+      "Establecer procedimientos generales para la atención corporal del usuario",
       "Certificar la aplicación de masaje sueco",
-      "Capacitar médicos especialistas",
-      "Formar cosmetólogos"
+      "Evaluar únicamente las condiciones físicas del usuario antes del masaje",
+      "Desarrollar técnicas especializadas de rehabilitación mediante masaje"
     ],
     correct:1,
     explanation:"La respuesta correcta es B porque el propósito indicado en el diagnóstico es certificar la aplicación de masaje sueco.",
@@ -346,10 +346,10 @@ const questions = [
   {
     q:"¿Qué debe hacer el terapeuta antes de iniciar el masaje?",
     options:[
-      "Aplicar aceite directamente",
+      "Explicar las maniobras principales que se utilizarán durante la sesión",
       "Solicitar autorización al receptor",
-      "Retirar completamente las sábanas",
-      "Aplicar presión profunda inmediatamente"
+      "Seleccionar previamente la intensidad de todas las maniobras",
+      "Iniciar con maniobras suaves para valorar la respuesta del receptor"
     ],
     correct:1,
     explanation:"La respuesta correcta es B: antes de iniciar el masaje se debe solicitar autorización al receptor.",
@@ -358,10 +358,10 @@ const questions = [
   {
     q:"¿Cuál es una contraindicación para NO realizar el masaje?",
     options:[
-      "Relajación muscular",
-      "Buena circulación",
+      "Presentar tensión muscular relacionada con las actividades cotidianas",
+      "Manifestar cansancio físico después de realizar actividades habituales",
       "Condición física riesgosa del usuario",
-      "Estrés leve"
+      "Manifestar estrés o tensión que pueda favorecer la relajación"
     ],
     correct:2,
     explanation:"La respuesta correcta es C porque una condición física riesgosa del usuario es motivo para no realizar el masaje.",
@@ -370,10 +370,10 @@ const questions = [
   {
     q:"¿Qué debe verificar el terapeuta en el usuario antes del masaje?",
     options:[
-      "Marca de ropa",
+      "Las características generales de la vestimenta del usuario",
       "Color y textura de la piel",
-      "Nivel escolar",
-      "Tipo de alimentación"
+      "Los hábitos alimenticios relacionados con su rutina diaria",
+      "Las actividades laborales que realiza habitualmente"
     ],
     correct:1,
     explanation:"La respuesta correcta es B: el terapeuta debe verificar el color y la textura de la piel.",
@@ -382,10 +382,10 @@ const questions = [
   {
     q:"¿Cuál es el efecto principal del masaje sueco?",
     options:[
-      "Fracturar adherencias óseas",
-      "Provocar dolor muscular",
+      "Favorecer la movilidad de los tejidos mediante maniobras específicas",
+      "Disminuir la tensión corporal mediante la aplicación de diferentes maniobras",
       "Relajar y mejorar la circulación",
-      "Inmovilizar articulaciones"
+      "Generar una respuesta muscular mediante la aplicación de presión progresiva"
     ],
     correct:2,
     explanation:"La respuesta correcta es C: el diagnóstico señala como efecto principal relajar y mejorar la circulación.",
@@ -394,10 +394,10 @@ const questions = [
   {
     q:"¿Qué debe cubrir la sábana durante el masaje?",
     options:[
-      "Solo piernas",
-      "Solo espalda",
+      "El área corporal que no se encuentre siendo trabajada",
+      "Las zonas del cuerpo que permanezcan descubiertas durante la aplicación",
       "El cuerpo desde hombros hasta pies",
-      "Únicamente abdomen"
+      "Principalmente las extremidades inferiores y la zona abdominal"
     ],
     correct:2,
     explanation:"La respuesta correcta es C: la sábana debe cubrir el cuerpo desde hombros hasta pies.",
@@ -406,10 +406,10 @@ const questions = [
   {
     q:"¿Cuál es una función de la vibración en masaje sueco?",
     options:[
-      "Endurecer músculos",
+      "Estimular los tejidos mediante movimientos rápidos y controlados",
       "Relajar tejidos",
-      "Lastimar articulaciones",
-      "Inflamar músculos"
+      "Incrementar la tensión de los tejidos mediante estímulos repetitivos",
+      "Favorecer la respuesta muscular mediante movimientos de mayor intensidad"
     ],
     correct:1,
     explanation:"La respuesta correcta es B: la vibración tiene como función relajar tejidos.",
@@ -418,10 +418,10 @@ const questions = [
   {
     q:"¿Qué debe hacer el terapeuta al explicar el procedimiento?",
     options:[
-      "Ignorar preguntas",
+      "Proporcionar únicamente las indicaciones necesarias para iniciar la sesión",
       "Responder dudas del usuario",
-      "Hablar rápidamente",
-      "Evitar explicar sensaciones"
+      "Explicar las etapas principales evitando extenderse en aspectos secundarios",
+      "Comunicar las indicaciones de manera breve antes de comenzar el procedimiento"
     ],
     correct:1,
     explanation:"La respuesta correcta es B: el terapeuta debe responder las dudas del usuario.",
@@ -430,10 +430,10 @@ const questions = [
   {
     q:"¿Qué actitud debe demostrar el terapeuta durante la explicación del procedimiento?",
     options:[
-      "Distracción",
+      "Mantener una actitud cordial y limitar la explicación a las indicaciones principales",
       "Responsabilidad",
-      "Desinterés",
-      "Autoritarismo"
+      "Mantener una actitud firme para dirigir el procedimiento de manera continua",
+      "Concentrarse principalmente en completar cada etapa del procedimiento"
     ],
     correct:1,
     explanation:"La respuesta correcta es B: la actitud esperada es responsabilidad.",
@@ -442,10 +442,10 @@ const questions = [
   {
     q:"¿Qué debe determinar el terapeuta antes de aplicar aceites?",
     options:[
-      "El color favorito del cliente",
+      "La cantidad de aceite necesaria para cubrir la superficie corporal",
       "El tipo de efecto a lograr",
-      "La música ambiental",
-      "La marca de la camilla"
+      "La cantidad de producto que se utilizará durante la sesión",
+      "La forma de distribuir el aceite sobre la zona que será trabajada"
     ],
     correct:1,
     explanation:"La respuesta correcta es B: antes de aplicar aceites se debe determinar el tipo de efecto a lograr.",
